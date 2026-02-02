@@ -84,27 +84,6 @@ While we use Notion for this course, the code is adaptable to other sources like
 
 ---
 
-## 📖 About This Project {#about}
-
-This project implements a production-ready **Second Brain AI Assistant** that transforms your personal knowledge base into an intelligent conversational interface. Built with modern LLMOps practices, it combines RAG (Retrieval-Augmented Generation), agentic workflows, and fine-tuned LLMs to provide accurate, context-aware responses from your curated content.
-
-### 💡 What Is the Second Brain?
-
-The Second Brain, a concept by Tiago Forte, is your personal knowledge repository of notes, ideas, and resources. This AI Assistant leverages that knowledge to:
-
-- ✅ Answer questions based on your research
-- ✅ Summarize documents and extract insights
-- ✅ Provide recommendations from your curated content
-- ✅ Search across your entire knowledge base instantly
-
-**Example queries:**
-- "Recommend the best agent courses from my notes"
-- "List top PDF parsing tools I've researched"
-- "Summarize my notes on LLM optimization methods"
-
-While this implementation uses **Notion** as the data source, the architecture is adaptable to other platforms like Google Drive, Confluence, or local markdown files. A curated AI/ML resource database covering GenAI, LLMs, RAG, and MLOps is included—**no Notion account required**.
-
----
 
 ## 🏗️ Architecture {#architecture}
 

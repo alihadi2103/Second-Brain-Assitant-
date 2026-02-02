@@ -246,8 +246,5 @@ This project demonstrates:
 
 ---
 
-## Demo
-<video  controls>
-  <source src="static/second_brain_ai_assistant_example.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+
+

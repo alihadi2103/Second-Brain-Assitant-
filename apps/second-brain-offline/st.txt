@@ -1,0 +1,108 @@
+.
+├── Makefile
+├── configs
+│   ├── collect_notion_data.yaml
+│   ├── compute_rag_vector_index_huggingface_contextual_simple.yaml
+│   ├── compute_rag_vector_index_openai_contextual.yaml
+│   ├── compute_rag_vector_index_openai_contextual_simple.yaml
+│   ├── compute_rag_vector_index_openai_parent.yaml
+│   ├── etl.yaml
+│   ├── etl_precomputed.yaml
+│   └── generate_dataset.yaml
+├── pipelines
+│   ├── __init__.py
+│   ├── collect_notion_data.py
+│   ├── compute_rag_vector_index.py
+│   ├── etl.py
+│   ├── etl_precomputed.py
+│   └── generate_dataset.py
+├── pyproject.toml
+├── src
+│   └── second_brain_offline
+│       ├── __init__.py
+│       ├── application
+│       │   ├── __init__.py
+│       │   ├── agents
+│       │   │   ├── __init__.py
+│       │   │   ├── contextual_summarization.py
+│       │   │   ├── quality.py
+│       │   │   └── summarization.py
+│       │   ├── base.py
+│       │   ├── crawlers
+│       │   │   ├── __init__.py
+│       │   │   └── crawl4ai.py
+│       │   ├── dataset
+│       │   │   ├── __init__.py
+│       │   │   └── generators.py
+│       │   ├── models
+│       │   │   ├── __init__.py
+│       │   │   ├── evaluate.ipynb
+│       │   │   ├── finetuning.ipynb
+│       │   │   └── inference.ipynb
+│       │   └── rag
+│       │       ├── __init__.py
+│       │       ├── embeddings.py
+│       │       ├── retrievers.py
+│       │       └── splitters.py
+│       ├── config.py
+│       ├── domain
+│       │   ├── __init__.py
+│       │   ├── dataset.py
+│       │   └── document.py
+│       ├── infrastructure
+│       │   ├── __init__.py
+│       │   ├── aws
+│       │   │   ├── __init__.py
+│       │   │   └── s3.py
+│       │   ├── mongo
+│       │   │   ├── __init__.py
+│       │   │   ├── indexes.py
+│       │   │   └── service.py
+│       │   └── notion
+│       │       ├── __init__.py
+│       │       ├── database.py
+│       │       ├── document.py
+│       │       └── page.py
+│       └── utils.py
+├── st.txt
+├── steps
+│   ├── __init__.py
+│   ├── collect_notion_data
+│   │   ├── __init__.py
+│   │   ├── extract_notion_documents.py
+│   │   └── extract_notion_documents_metadata.py
+│   ├── compute_rag_vector_index
+│   │   ├── __init__.py
+│   │   ├── chunk_embed_load.py
+│   │   └── filter_by_quality.py
+│   ├── etl
+│   │   ├── __init__.py
+│   │   ├── add_quality_score.py
+│   │   └── crawl.py
+│   ├── generate_dataset
+│   │   ├── __init__.py
+│   │   ├── create_histograms.py
+│   │   └── generate_summary_dataset.py
+│   └── infrastructure
+│       ├── __init__.py
+│       ├── fetch_from_mongodb.py
+│       ├── ingest_to_mongodb.py
+│       ├── push_to_huggingface.py
+│       ├── read_documents_from_disk.py
+│       ├── save_dataset_to_disk.py
+│       ├── save_documents_to_disk.py
+│       └── upload_to_s3.py
+├── tests
+│   ├── test_download_crawled_dataset.py
+│   ├── test_download_notion_dataset.py
+│   └── test_s3.py
+├── tools
+│   ├── call_huggingface_dedicated_endpoint.py
+│   ├── delete_rag_collection.py
+│   ├── rag.py
+│   ├── run.py
+│   ├── use_s3.py
+│   └── validate_aws_boto3.py
+└── uv.lock
+
+24 directories, 82 files
